@@ -769,7 +769,7 @@ class PyChess(Gtk.Application):
                     .strip()
                 )
                 self.aboutdialog.set_version(f"{VERSION_NAME} Git {self.git_rev}")
-            except subprocess.CalledProcessError:
+            except (subprocess.CalledProcessError, FileNotFoundError):
                 pass
         self.aboutdialog.set_comments(self.aboutdialog.get_comments())
 

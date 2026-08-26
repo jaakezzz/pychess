@@ -35,6 +35,7 @@ from pychess.Utils.const import (
     PLACEMENTCHESS,
     SCHESS,
     LIGHTBRIGADECHESS,
+    DRAGONANGA,
 )
 
 from .normal import NormalBoard
@@ -69,6 +70,7 @@ from .setupposition import SetupBoard
 from .placement import PlacementBoard
 from .seirawan import SchessBoard
 from .lightbrigade import LightbrigadeBoard
+from .dragonanga import DragonangaBoard
 
 variants = {
     NORMALCHESS: NormalBoard,
@@ -107,6 +109,7 @@ variants = {
     PLACEMENTCHESS: PlacementBoard,
     SCHESS: SchessBoard,
     LIGHTBRIGADECHESS: LightbrigadeBoard,
+    DRAGONANGA: DragonangaBoard,
 }
 
 name2variant = {v.cecp_name.capitalize(): v for v in variants.values()}

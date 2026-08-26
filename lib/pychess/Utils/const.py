@@ -70,7 +70,8 @@ UNFINISHED_STATES = (WAITING_TO_START, PAUSED, RUNNING, UNKNOWN_STATE)
     PLACEMENTCHESS,
     SCHESS,
     LIGHTBRIGADECHESS,
-) = range(36)
+    DRAGONANGA,
+) = range(37)
 
 ASEAN_VARIANTS = (ASEANCHESS, MAKRUKCHESS, CAMBODIANCHESS, AIWOKCHESS, SITTUYINCHESS)
 DROP_VARIANTS = (
@@ -314,6 +315,8 @@ chr2Sign = {
     "f": QUEEN,
     "h": HAWK,
     "e": ELEPHANT,
+    "i": PAWN,     # Dragonanga Inverted Pawn (Uses Pawn graphic)
+    "d": BISHOP,   # Dragonanga Dragonbishop (Uses Bishop graphic)
 }
 chrU2Sign = {
     "K": KING,
@@ -327,6 +330,8 @@ chrU2Sign = {
     "F": QUEEN,
     "H": HAWK,
     "E": ELEPHANT,
+    "I": PAWN,     # Dragonanga Inverted Pawn
+    "D": BISHOP,   # Dragonanga Dragonbishop
 }
 
 # Move values
